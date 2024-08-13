@@ -20,60 +20,6 @@ function downloadCSV(csv, filename) {
 }
 
 // !-------------------------------------------------------
-// let mediaRecorder;
-// let recordedBlobs;
-
-// document.getElementById("start-video").addEventListener("click", async () => {
-//   const stream = await navigator.mediaDevices.getUserMedia({
-//     video: true,
-//     audio: {
-//       echoCancellation: true,
-//       noiseSuppression: true,
-//       sampleRate: 44100,
-//     },
-//   });
-
-//   document.getElementById("video").srcObject = stream;
-
-//   recordedBlobs = [];
-//   mediaRecorder = new MediaRecorder(stream, {
-//     mimeType: "video/webm;codecs=vp9,opus",
-//   });
-//   mediaRecorder.ondataavailable = (event) => {
-//     if (event.data && event.data.size > 0) {
-//       recordedBlobs.push(event.data);
-//     }
-//   };
-//   mediaRecorder.start();
-//   console.log(stream);
-// });
-
-// document.getElementById("stop-video").addEventListener("click", () => {
-//   mediaRecorder.stop();
-//   const video = document.getElementById("video");
-//   video.srcObject.getTracks().forEach((track) => track.stop());
-//   video.src = window.URL.createObjectURL(
-//     new Blob(recordedBlobs, { type: "video/webm" })
-//   );
-// });
-
-// function sendVideo() {
-//   const formData = new FormData();
-//   formData.append("chat_id", "588935310");
-//   formData.append("video", new Blob(recordedBlobs, { type: "video/webm" }));
-
-//   fetch(
-//     "https://api.telegram.org/bot7071335378:AAGAws-yHvjQy9m3bK-H915EGfZBTcpuuKE/sendVideo",
-//     {
-//       method: "POST",
-//       body: formData,
-//     }
-//   )
-//     .then((response) => response.json())
-//     .then((data) => console.log(data))
-//     .catch((error) => console.error("Error:", error));
-// }
-
 let recorder;
 let stream;
 
