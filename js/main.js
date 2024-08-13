@@ -33,6 +33,8 @@ document.getElementById("start-video").addEventListener("click", async () => {
   recorder = RecordRTC(stream, {
     type: "video",
     mimeType: "video/webm;codecs=vp8,opus", // По умолчанию webm
+    videoBitsPerSecond: 500000, // Уменьшите битрейт видео
+    audioBitsPerSecond: 64000, // Уменьшите битрейт аудио
   });
 
   recorder.startRecording();
