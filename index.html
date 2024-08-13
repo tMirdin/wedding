@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="js/styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to Our Wedding!</h1>
+    <img src="your-photo.jpg" alt="Wedding Photo" />
+    <p>Date: [Your Wedding Date]</p>
+    <p>Location: [Wedding Location]</p>
+
+    <h2>Quiz</h2>
+    <form id="quiz-form">
+      <label for="question1">What is the bride's favorite color?</label>
+      <input type="text" id="question1" name="question1" />
+
+      <label for="question2">Where did the couple first meet?</label>
+      <input type="text" id="question2" name="question2" />
+
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+
+    <h2>Send Us a Video Greeting!</h2>
+    <video id="video" width="320" height="240" controls autoplay muted></video
+    ><br />
+    <button id="start-video">Start Recording</button>
+    <button id="stop-video">Stop Recording</button>
+    <button id="send-video">Send Video</button>
+
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
