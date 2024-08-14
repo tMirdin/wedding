@@ -1,23 +1,18 @@
-function submitQuiz() {
-  const question1 = document.getElementById("question1").value;
-  const question2 = document.getElementById("question2").value;
+let form = document.querySelector("form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Предотвращаем стандартное поведение формы
 
-  // Создаем CSV строку для сохранения данных в Excel
-  const csvData = `"${question1}","${question2}"\n`;
-
-  // Сохраняем данные в файл
-  downloadCSV(csvData, "quiz-results.csv");
-}
-
-function downloadCSV(csv, filename) {
-  const csvFile = new Blob([csv], { type: "text/csv" });
-  const downloadLink = document.createElement("a");
-  downloadLink.download = filename;
-  downloadLink.href = window.URL.createObjectURL(csvFile);
-  downloadLink.style.display = "none";
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-}
+  fetch(
+    "https://script.google.com/macros/s/AKfycbysVFJuw0ArB1FdP1PWkA1JWwo47sy2h3ZxEiSJsRhm7rT91ZGwF1ofH7NdjemsCtns/exec",
+    {
+      method: "POST",
+      body: new FormData(form),
+    }
+  )
+    .then((response) => response.text())
+    .then((text) => console.log(text))
+    .catch((error) => console.error("Error:", error));
+});
 
 // !-------------------------------------------------------
 let recorder;

@@ -7,28 +7,59 @@
     <link rel="stylesheet" href="js/styles.css" />
   </head>
   <body>
-    <h1>Welcome to Our Wedding!</h1>
-    <img src="" alt="Wedding Photo" />
-    <p>Date: [Your Wedding Date]</p>
-    <p>Location: [Wedding Location]</p>
+    <div class="container">
+      <!-- Welcome Section -->
+      <section class="welcome">
+        <img src="your-photo.jpg" alt="Welcome Image" class="welcome-img" />
+        <h1>Welcome to Our Wedding!</h1>
+      </section>
 
-    <h2>Quiz</h2>
-    <form id="quiz-form">
-      <label for="question1">What is the bride's favorite color?</label>
-      <input type="text" id="question1" name="question1" />
+      <!-- Schedule Section -->
+      <section class="schedule">
+        <h2>Event Schedule</h2>
+        <ul>
+          <li><strong>15:00</strong> - Ceremony</li>
+          <li><strong>16:00</strong> - Reception</li>
+          <li><strong>18:00</strong> - Dinner</li>
+          <li><strong>20:00</strong> - Dance Party</li>
+        </ul>
+      </section>
 
-      <label for="question2">Where did the couple first meet?</label>
-      <input type="text" id="question2" name="question2" />
+      <!-- Name Input Section -->
+      <section class="name-input">
+        <h2>Please Enter Your Name</h2>
+        <form>
+          <input type="text" placeholder="first Name" name="name" required />
+          <input type="text" placeholder="last Name" name="lastName" required />
+          <div class="question">
+            <p>Вы придете на мероприятие?</p>
+            <label><input type="radio" name="answer" value="Да" /> Приду</label>
+            <label
+              ><input type="radio" name="answer" value="Нет" /> Не смогу</label
+            >
+            <label
+              ><input type="radio" name="answer" value="Ожидание" /> Я дам ответ
+              в течение 2-х дней</label
+            >
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
 
-      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
-    </form>
-
-    <h2>Send Us a Video Greeting!</h2>
-    <video id="video" width="320" height="240" controls autoplay muted></video
-    ><br />
-    <button id="start-video">Start Recording</button>
-    <button id="stop-video">Stop Recording</button>
-    <button id="send-video">Send Video</button>
+      <!-- Video Section -->
+      <section class="video-section">
+        <h2>Watch Our Story</h2>
+        <video id="video" controls autoplay muted>
+          <source src="your-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-buttons">
+          <button id="start-video">Start Recording</button>
+          <button id="stop-video">Stop Recording</button>
+          <button id="send-video">Send Video</button>
+        </div>
+      </section>
+    </div>
 
     <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
     <script src="js/main.js"></script>
