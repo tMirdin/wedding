@@ -117,3 +117,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+#send-video:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: #333;
+}
+.video-buttons button:active {
+  transform: scale(0.9);
+}
