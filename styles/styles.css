@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #3a3939;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  background-image: url();
+  text-align: center;
+}
+
+header h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+
+header h3 {
+  margin-top: 0;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #1b3a70ee;
+}
+.wife_and_husband {
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wife_and_husband h1 {
+  font-size: 90px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  z-index: 1;
+}
+
+.wife_and_husband h2 {
+  font-size: 300px;
+  position: absolute;
+  z-index: 0;
+  color: #c6c6c654;
+  margin: 0;
+  padding-bottom: 37px;
+  padding-left: 51px;
+}
+
+header .date {
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 55px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+section h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.details_ivent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.details_ivent-first {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.details_ivent-first h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.details_ivent-first hr {
+  border: none;
+  background-color: #000;
+  width: 1px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.first_left {
+  width: 70%;
+}
+
+.first_left h4 {
+  font-size: 12px;
+  margin: 10px auto;
+  font-weight: 100;
+}
+
+.first_left h3 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.first_left span {
+  font-size: 14px;
+}
+
+.det {
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #1b3a70ee;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+.dresscode span {
+  font-size: 14px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 2px solid white;
+  margin-top: 40px;
+}
+
+.circle:nth-child(1) {
+  background-color: #203354;
+}
+.circle:nth-child(2) {
+  background-color: #3a5785;
+  margin-left: -20px;
+}
+.circle:nth-child(3) {
+  background-color: #607599;
+  margin-left: -20px;
+}
+.circle:nth-child(4) {
+  background-color: #adc9ef;
+  margin-left: -20px;
+}
+.circle:nth-child(5) {
+  background-color: #dfe7f0;
+  margin-left: -20px;
+}
+
+.guest_card span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+#check_guest {
+  margin-top: 20px;
+  background-color: #3a3939;
+  color: white;
+  width: 220px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* form */
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+form > input {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #3a3939;
+  background-color: inherit;
+  outline: none;
+}
+
+.come_ivent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.come_ivent input[type="radio"] {
+  accent-color: black;
+  margin: 10px auto;
+  margin-right: 10px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  background-color: #3a3939;
+  color: white;
+  border: 0;
+  font-size: 17px;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.8);
+}
+
+/* time */
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(228, 226, 226);
+  border-radius: 10px;
+}
+
+.countdown-item span {
+  display: block;
+  font-size: 22px;
+}
+
+.countdown-item .label {
+  font-size: 16px;
+  color: rgb(101, 101, 101);
+}
+
+.block_line_time {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 370px;
+}
+
+#line_time {
+  width: 150px;
+  border: 1px solid #3a3939;
+  text-align: start;
+  margin: 0;
+}
+
+#link_telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: #3a3939;
+  color: white;
+}
+
+#link_telegram:active {
+  transform: scale(0.9);
+}
+
+/* video */
+.video_block {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.video-buttons {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.video-buttons button {
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  margin: 10px auto;
+  border: none;
+  background-color: #3a3939;
+  color: white;
+}
+
+.video-buttons button:active {
+  transform: scale(0.9);
+}
+#send-video {
+  display: none;
+}
+
+footer {
+  height: 70px;
+  font-size: 25px;
+  font-family: "Great Vibes", cursive;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  display: none;
+  margin-top: 10px;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+.loader1 {
+  display: none;
+  margin-top: 10px;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}

@@ -2,63 +2,211 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wedding Invitation</title>
-    <link rel="stylesheet" href="js/styles.css" />
+    <title>Wedding day</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- Welcome Section -->
-      <section class="welcome">
-        <img src="" alt="Welcome Image" class="welcome-img" />
-        <h1>Welcome to Our Wedding!</h1>
-      </section>
+    <header>
+      <h2>ПРИГЛАШЕНИЕ НА СВАДЬБУ</h2>
+      <h3>save The date</h3>
+      <div class="date">
+        <span>14</span>
+        <span>09</span>
+        <span>24</span>
+      </div>
+      <div class="wife_and_husband">
+        <h2>&</h2>
+        <h1>
+          Мирдин <br />
+          Мидина
+        </h1>
+      </div>
+      <p>
+        Будем очень счастливы разделить радость <br />
+        этого прекрасного события вместе с вами!
+      </p>
+      <img src="./images/heard.png" alt="heard" width="30" />
+    </header>
 
-      <!-- Schedule Section -->
-      <section class="schedule">
-        <h2>Event Schedule</h2>
-        <ul>
-          <li><strong>15:00</strong> - Ceremony</li>
-          <li><strong>16:00</strong> - Reception</li>
-          <li><strong>18:00</strong> - Dinner</li>
-          <li><strong>20:00</strong> - Dance Party</li>
-        </ul>
-      </section>
+    <section>
+      <h2>Детали</h2>
+      <h5 class="det">details</h5>
+      <div class="details_ivent">
+        <div class="details_ivent-first">
+          <div class="first_left">
+            <h3>Сбор гостей</h3>
+            <span
+              >Банкетный зал Vu'ala г.Бишкек,
+              <a href="https://go.2gis.com/zzjgp" target="_blank"
+                >ул. Малдыбаева 54</a
+              ></span
+            >
+            <h4>
+              Можно пройти к фуршету, выпить, поговорить с гостями,
+              сфотографироваться у фото-зоны
+            </h4>
+          </div>
+          <hr />
+          <h4>17:00</h4>
+        </div>
+        <div class="details_ivent-first">
+          <div class="first_left">
+            <h3>Начало мероприятия</h3>
+            <span
+              >Банкетный зал Vu'ala г.Бишкек,
+              <a href="https://go.2gis.com/zzjgp" target="_blank"
+                >ул. Малдыбаева 54</a
+              ></span
+            >
+            <h4>
+              Просьба всем уже к 18:00 быть в ресторане. Начнем ровно в 18:00
+            </h4>
+          </div>
+          <hr />
+          <h4>18:00</h4>
+        </div>
+        <img src="./images/5191439.png" alt="location" width="30" />
+      </div>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=74.600223%2C42.827896&mode=whatshere&whatshere%5Bpoint%5D=74.600444%2C42.827027&whatshere%5Bzoom%5D=17&z=17.47"
+        width="370px"
+        height="370px"
+        frameborder="0"
+        allowfullscreen="true"
+        style="position: relative"
+      ></iframe>
+    </section>
+    <section>
+      <h2>Дресс-код</h2>
+      <h5 class="det">dress-code</h5>
+      <div class="dresscode">
+        <span
+          >Нам будет очень приятно, если в своих нарядах <br />
+          Вы поддержите цветовую гамму нашей свадьбы:
+        </span>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </section>
 
-      <!-- Name Input Section -->
-      <section class="name-input">
-        <h2>Please Enter Your Name</h2>
+    <section>
+      <h2>Анкета гостя</h2>
+      <h5 class="det">guest</h5>
+      <div class="guest_card">
+        <span>Пожалуйста, подтвердите свое присутствие </span>
         <form>
-          <input type="text" placeholder="first Name" name="name" required />
-          <input type="text" placeholder="last Name" name="lastName" required />
-          <div class="question">
-            <p>Вы придете на мероприятие?</p>
-            <label><input type="radio" name="answer" value="Да" /> Приду</label>
+          <input type="text" placeholder="Ваше имя" name="name" required />
+          <input
+            type="text"
+            placeholder="Ваше фамилия"
+            name="lastName"
+            required
+          />
+          <div class="come_ivent">
+            <p>Подтверждение присутствия</p>
             <label
-              ><input type="radio" name="answer" value="Нет" /> Не смогу</label
+              ><input type="radio" name="answer" value="Приду" required />
+              Приду</label
             >
             <label
-              ><input type="radio" name="answer" value="Ожидание" /> Я дам ответ
-              в течение 2-х дней</label
+              ><input type="radio" name="answer" value="Не смогу" required /> Не
+              смогу</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="answer"
+                value="Позже отвечу"
+                required
+              />
+              Отвечу в течение 3-х дней</label
             >
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit">Отправить</button>
+          <span id="check_guest"></span>
+          <div class="loader1"></div>
         </form>
-      </section>
+      </div>
+    </section>
 
-      <!-- Video Section -->
-      <section class="video-section">
-        <h2>Watch Our Story</h2>
-        <video id="video" autoplay muted></video>
-        <div class="video-buttons">
-          <button id="start-video">Start Recording</button>
-          <button id="stop-video">Stop Recording</button>
-          <button id="send-video">Send Video</button>
+    <section>
+      <h2>До свадьбы осталось!</h2>
+      <h5 class="det">before</h5>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <span class="label">Дней</span>
         </div>
-      </section>
-    </div>
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <span class="label">Часов</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <span class="label">Минут</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <span class="label">Секунд</span>
+        </div>
+      </div>
+      <div class="block_line_time">
+        <hr id="line_time" />
+      </div>
+    </section>
 
+    <section>
+      <h2>Фото со свадьбы</h2>
+      <h5 class="det">photo</h5>
+      <span
+        >Переходите по ссылке в телеграм группу, <br />
+        куда можно будет оптарвлять все фото сделанные вами. <br />
+        Посмотрим свадьбу с разных ракурсов!</span
+      >
+      <a
+        id="link_telegram"
+        href="https://t.me/+j0HlZHRmeAw1NjIy"
+        target="_blank"
+        >Телеграм группа
+      </a>
+    </section>
+
+    <section>
+      <h2>
+        Специальное задание <br />
+        для вас!
+      </h2>
+      <h5 class="det">video task</h5>
+      <h3>Запишите на видео ваш ответ на вопрос и отправьте.</h3>
+      <p id="question1"></p>
+      <div class="video_block">
+        <video
+          id="video"
+          autoplay
+          muted
+          controls
+          height="300"
+          width="360"
+        ></video>
+        <div class="video-buttons">
+          <button id="start-video">Начать запись</button>
+          <button id="stop-video">Остановить видео</button>
+          <button id="send-video">Отправить ответ</button>
+          <div class="loader"></div>
+        </div>
+      </div>
+      <span id="check_video_text"></span>
+    </section>
+
+    <footer>m & m</footer>
     <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
