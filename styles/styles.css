@@ -6,6 +6,7 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: #3a3939;
+  font-weight: 300;
 }
 
 body {
@@ -150,19 +151,19 @@ section h2 {
   background-color: #203354;
 }
 .circle:nth-child(2) {
-  background-color: #3a5785;
+  background-color: #828282;
   margin-left: -20px;
 }
 .circle:nth-child(3) {
-  background-color: #607599;
+  background-color: #abbda3;
   margin-left: -20px;
 }
 .circle:nth-child(4) {
-  background-color: #adc9ef;
+  background-color: #2a2b2d;
   margin-left: -20px;
 }
 .circle:nth-child(5) {
-  background-color: #dfe7f0;
+  background-color: #dcdadd;
   margin-left: -20px;
 }
 
