@@ -293,6 +293,13 @@ button[type="submit"]:active {
 }
 
 /* video */
+
+video {
+  border-radius: 15px; /* Скругление углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+  /* Цвет фона (если видео не загружено) */
+}
+
 .video_block {
   width: 360px;
   margin: 0 auto;
